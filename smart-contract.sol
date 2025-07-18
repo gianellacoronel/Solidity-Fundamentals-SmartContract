@@ -19,10 +19,19 @@ contract UserInformation {
     
     struct User {
         string name;
-        uint age;
+        uint256 age;
         string email;
     }
     mapping(address=>User) public userInformation;
+    User[] public users;
 
-    
+    function createRegister(address user_, string memory name_, uint256 age_, string memory email_) public {        
+        User memory user = User({
+            name: name_,
+            age: age_,
+            email: email_
+        });
+        userInformation[user_] = user;
+        users.push(user);
+    }
 }
