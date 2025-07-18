@@ -34,4 +34,8 @@ contract UserInformation {
         userInformation[user_] = user;
         users.push(user);
     }
+
+    function getProfile(address user_) public view returns (User memory) {
+        return userInformation[user_];
+    }
 }

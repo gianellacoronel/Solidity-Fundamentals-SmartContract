@@ -37,6 +37,42 @@
 				"inputs": [
 					{
 						"internalType": "address",
+						"name": "user_",
+						"type": "address"
+					}
+				],
+				"name": "getProfile",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "name",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "age",
+								"type": "uint256"
+							},
+							{
+								"internalType": "string",
+								"name": "email",
+								"type": "string"
+							}
+						],
+						"internalType": "struct UserInformation.User",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
 						"name": "",
 						"type": "address"
 					}
@@ -120,11 +156,11 @@
 	},
 	"sources": {
 		"smart-contract.sol": {
-			"keccak256": "0x3dd1affeaebcd675b1ceda77da9791f60cd15944c0fa15ab4dc6ff89eafd03bc",
+			"keccak256": "0x5a35a0adc69f32d19e329abc99b6c2531f3fc64ab3f2b60557e72ee4ea5b51b2",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://6259dd3f950dd3815ae9be846604e438c785146006cd1eb0c602abbecffac396",
-				"dweb:/ipfs/QmexdKc4sfA2ZoSxJ4vz55ssziKWG3TVAGcBTwdVgf1dHB"
+				"bzz-raw://bcfdf6d7bd07f1ef81e833c31e32517129c6b24211ddcea443cb8bdde1d1bbea",
+				"dweb:/ipfs/QmTdwVpJcAZh5qVwRS3d9yATb9csGR4Si2bLaAExP45UiZ"
 			]
 		}
 	},
