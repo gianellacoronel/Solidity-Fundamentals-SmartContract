@@ -35,6 +35,16 @@ contract UserInformation {
         users.push(user);
     }
 
+    function updateProfile(address user_, string memory name_, uint256 age_, string memory email_) public {                
+        User memory user = User({
+            name: name_,
+            age: age_,
+            email: email_
+        });
+        userInformation[user_] = user;
+        
+    }
+
     function getProfile(address user_) public view returns (User memory) {
         return userInformation[user_];
     }

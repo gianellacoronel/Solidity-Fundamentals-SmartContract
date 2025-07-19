@@ -73,6 +73,34 @@
 				"inputs": [
 					{
 						"internalType": "address",
+						"name": "user_",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "name_",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "age_",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "email_",
+						"type": "string"
+					}
+				],
+				"name": "updateProfile",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
 						"name": "",
 						"type": "address"
 					}
@@ -156,11 +184,11 @@
 	},
 	"sources": {
 		"smart-contract.sol": {
-			"keccak256": "0x5a35a0adc69f32d19e329abc99b6c2531f3fc64ab3f2b60557e72ee4ea5b51b2",
+			"keccak256": "0xf59b2e5581ad17ae609f9502ef98785da88b162c7fc34981f8114bfaa01221fe",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://bcfdf6d7bd07f1ef81e833c31e32517129c6b24211ddcea443cb8bdde1d1bbea",
-				"dweb:/ipfs/QmTdwVpJcAZh5qVwRS3d9yATb9csGR4Si2bLaAExP45UiZ"
+				"bzz-raw://487c32a2d23f654e7af0d39573bc9842791f117c5ff3d9d68d07dd0b13966fe0",
+				"dweb:/ipfs/QmUi4g7rhw4raE7XDqiVL3UUwcWBj4z4oP98gbD1KXNoEk"
 			]
 		}
 	},
