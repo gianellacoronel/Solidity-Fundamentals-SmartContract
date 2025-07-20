@@ -59,6 +59,11 @@
 								"internalType": "string",
 								"name": "email",
 								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "timestamp",
+								"type": "uint256"
 							}
 						],
 						"internalType": "struct UserInformation.User",
@@ -121,6 +126,11 @@
 						"internalType": "string",
 						"name": "email",
 						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "timestamp",
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
@@ -150,6 +160,11 @@
 						"internalType": "string",
 						"name": "email",
 						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "timestamp",
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
@@ -184,11 +199,11 @@
 	},
 	"sources": {
 		"smart-contract.sol": {
-			"keccak256": "0xf59b2e5581ad17ae609f9502ef98785da88b162c7fc34981f8114bfaa01221fe",
+			"keccak256": "0x5aed325796de9dbe62a91162a931b0db6b04b31c1a1bc1202ac71abc04b5a736",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://487c32a2d23f654e7af0d39573bc9842791f117c5ff3d9d68d07dd0b13966fe0",
-				"dweb:/ipfs/QmUi4g7rhw4raE7XDqiVL3UUwcWBj4z4oP98gbD1KXNoEk"
+				"bzz-raw://4f573347627e75f0ace9ac632dd8b1bf8e5aa5f54dc5adcafd893fbc3956fb1a",
+				"dweb:/ipfs/QmQwRLNWBYeb3J7jw4DV3T8hc83SDxmwi9S25QepYDL2Wv"
 			]
 		}
 	},

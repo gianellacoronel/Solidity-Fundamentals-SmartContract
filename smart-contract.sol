@@ -21,28 +21,34 @@ contract UserInformation {
         string name;
         uint256 age;
         string email;
+        uint256 timestamp;
     }
     mapping(address=>User) public userInformation;
     User[] public users;
 
-    function createRegister(address user_, string memory name_, uint256 age_, string memory email_) public {        
+    function createRegister(address user_, string memory name_, uint256 age_, string memory email_) public {  
+        require(bytes(userInformation[user_].name).length == 0, "User already registered");
+        
         User memory user = User({
             name: name_,
             age: age_,
-            email: email_
+            email: email_,
+            timestamp: block.timestamp
         });
         userInformation[user_] = user;
         users.push(user);
     }
 
     function updateProfile(address user_, string memory name_, uint256 age_, string memory email_) public {                
+        require(bytes(userInformation[user_].name).length != 0, "User not registered");
         User memory user = User({
             name: name_,
             age: age_,
-            email: email_
+            email: email_,
+            timestamp: block.timestamp
         });
         userInformation[user_] = user;
-        
+        users.push(user);
     }
 
     function getProfile(address user_) public view returns (User memory) {
