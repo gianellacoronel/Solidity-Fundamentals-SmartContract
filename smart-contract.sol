@@ -26,7 +26,7 @@ contract UserInformation {
     mapping(address=>User) public userInformation;
     User[] public users;
 
-    function createRegister(address user_, string memory name_, uint256 age_, string memory email_) public {  
+    function register(address user_, string memory name_, uint256 age_, string memory email_) public {  
         require(bytes(userInformation[user_].name).length == 0, "User already registered");
         
         User memory user = User({
