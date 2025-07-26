@@ -6,8 +6,32 @@
 pragma solidity ^0.8.0;
 contract VulnerablePiggyBank {
     address public owner;
-    constructor() { owner = msg.sender }
+    bool private locked;
+
+    constructor() {
+        owner = msg.sender;
+        locked = false;
+    }
+
+    modifier onlyOwner() {
+        require(msg.sender == owner, "Not the owner");
+        _;
+    }
+
+    modifier noReentrancy() {
+        require(!locked, "Reentrancy blocked");
+        locked = true;
+        _;
+        locked = false;
+    }
+
     function deposit() public payable {}
-    function withdraw() public { payable(msg.sender).transfer(address(this).balance); }
-    function attack() public { }
+
+    function withdraw() public onlyOwner noReentrancy {
+        payable(msg.sender).transfer(address(this).balance);
+    }
+
+    function attack() public {
+        withdraw();
+    }
 }
