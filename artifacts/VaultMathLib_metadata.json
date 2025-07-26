@@ -18,7 +18,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"smart-contract-w2-l1.sol": "Name"
+			"smart-contract-w2-l1.sol": "VaultMathLib"
 		},
 		"evmVersion": "prague",
 		"libraries": {},
@@ -33,10 +33,11 @@
 	},
 	"sources": {
 		"smart-contract-w2-l1.sol": {
-			"keccak256": "0x93d896f36b74044b1471def02bd4708ad4cd4b84b3e6965287822c2a931637eb",
+			"keccak256": "0xa632bb5805a7483f8cdd585d7ebc2615520a0175b3a34721d67cd01e5665e85a",
+			"license": "MIT",
 			"urls": [
-				"bzz-raw://629111bc764d3d98a905b8c4c710b70859488b0d77f9637767d55acef9e02505",
-				"dweb:/ipfs/QmNRmtwcBsXk7kgiJuRJnhoAAp1NZAadQdy7Ncckpcu38d"
+				"bzz-raw://fbde0ad8228407bfc3952745b1978af71ac23102de0eb8956ae1e0d94a0eff55",
+				"dweb:/ipfs/QmYBSmgpu9NybHMa42au7NSyQo3hXiZASajHdQM6LJpSqF"
 			]
 		}
 	},
