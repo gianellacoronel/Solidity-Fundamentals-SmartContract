@@ -58,7 +58,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"smart-contract-w2-l2.sol": "VulnerablePiggyBank"
+			"smart-contract-w2-l2.sol": "NewIulnerablePiggyBank"
 		},
 		"evmVersion": "prague",
 		"libraries": {},
@@ -73,11 +73,11 @@
 	},
 	"sources": {
 		"smart-contract-w2-l2.sol": {
-			"keccak256": "0x5495655d6e3aa7c3f6e6436e08da1e25204f43340e4bc29832db8cfdc7942e56",
+			"keccak256": "0x200983f1719ff48fffbe548af8d335a48a847fc8d7160a0ee1da1b183ac323fc",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://054e44144d986d3a8852f6c2bb40e3f351df33d444e2554d87a5c49ecd750710",
-				"dweb:/ipfs/QmXKJhspMJLmsXUgMWjsbjJ6fRWebFgG8Nt9UEpVLrmvip"
+				"bzz-raw://4c3296aab1cc7fca82a578a59f4c322d0e2f2419993c8caef6970045c12f31cc",
+				"dweb:/ipfs/QmcwrMgKD9qhFJEBo1dGXh1RgJ5EsUHqKazoB2RKLYC41b"
 			]
 		}
 	},

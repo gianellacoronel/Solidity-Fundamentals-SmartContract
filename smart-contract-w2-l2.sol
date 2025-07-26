@@ -2,9 +2,10 @@
 // Submit the repo link to your audited source code
 
 // SPDX-License-Identifier: MIT
-
 pragma solidity ^0.8.0;
-contract VulnerablePiggyBank {
+
+//contract VulnerablePiggyBank {
+contract NewInvulnerablePiggyBank {
     address public owner;
     bool private locked;
 
