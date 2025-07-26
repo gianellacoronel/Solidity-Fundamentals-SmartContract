@@ -184,7 +184,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"smart-contract.sol": "UserInformation"
+			"smart-contract-w1-l2.sol": "UserInformation"
 		},
 		"evmVersion": "prague",
 		"libraries": {},
@@ -198,7 +198,7 @@
 		"remappings": []
 	},
 	"sources": {
-		"smart-contract.sol": {
+		"smart-contract-w1-l2.sol": {
 			"keccak256": "0x5aed325796de9dbe62a91162a931b0db6b04b31c1a1bc1202ac71abc04b5a736",
 			"license": "MIT",
 			"urls": [
